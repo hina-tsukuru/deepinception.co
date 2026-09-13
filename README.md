@@ -8,6 +8,7 @@ DeepInception の Web サイト（GitHub Pages で公開）。
 | `privacy.html` | プライバシーポリシー（日本語 / English） |
 | `404.html` | 見つからないページ |
 | `style.css` | スタイル（外部リソースなし、ダークモード対応） |
+| `favicon.svg` | ブラウザのタブに出るアイコン |
 | `CNAME` | カスタムドメイン `deepinception.co` |
 
 ## 方針
