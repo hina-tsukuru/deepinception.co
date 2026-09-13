@@ -1,0 +1,58 @@
+:root {
+  --bg: #fbfaf7;
+  --fg: #1d1d1f;
+  --muted: #5f6368;
+  --line: #e6e3dc;
+  --accent: #2f5bd3;
+  --card: #ffffff;
+  --tag-bg: #eef2fd;
+  --tag-fg: #2f5bd3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121314;
+    --fg: #ececec;
+    --muted: #a3a7ad;
+    --line: #2a2c2f;
+    --accent: #8aa8ff;
+    --card: #1a1c1e;
+    --tag-bg: #1f2842;
+    --tag-fg: #a9bfff;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.8;
+}
+a { color: var(--accent); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+header.site { border-bottom: 1px solid var(--line); }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { font-weight: 700; letter-spacing: 0.02em; color: var(--fg); text-decoration: none; font-size: 18px; }
+nav.site a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: 14px; }
+nav.site a:hover { color: var(--fg); }
+.hero { padding: 72px 0 40px; }
+.hero h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.35; margin: 0 0 16px; }
+.hero p { color: var(--muted); margin: 0; font-size: 17px; }
+section { padding: 40px 0; border-top: 1px solid var(--line); }
+section h2 { font-size: 22px; margin: 0 0 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+.card h3 { margin: 0 0 4px; font-size: 20px; }
+.tag { display: inline-block; font-size: 12px; font-weight: 600; background: var(--tag-bg); color: var(--tag-fg); border-radius: 999px; padding: 2px 10px; margin-left: 8px; vertical-align: middle; }
+.card ul { margin: 12px 0 0; padding-left: 1.2em; }
+.en { color: var(--muted); font-size: 15px; }
+.lang-sep { margin-top: 48px; padding-top: 32px; border-top: 1px dashed var(--line); }
+.doc h1 { font-size: 30px; margin: 56px 0 8px; }
+.doc h2 { font-size: 19px; margin: 32px 0 8px; }
+.doc p, .doc li { font-size: 16px; }
+.meta { color: var(--muted); font-size: 14px; }
+dl.info { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 8px 0; }
+dl.info dt { color: var(--muted); }
+dl.info dd { margin: 0; }
+footer.site { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 13px; margin-top: 40px; }
+footer.site a { color: var(--muted); }
